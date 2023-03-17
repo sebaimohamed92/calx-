@@ -1,0 +1,58 @@
+.carousel-indicators .btnPoint{
+    background-color:#607D8B!important;
+    width:10px!important;
+    height:10px!important;
+    border-radius:50%!important;
+}
+
+ .carousel-indicators a{
+left:0px;
+color:#607D8B;
+}
+
+.carousel-indicators{
+   bottom: -77px!important;
+}
+
+ .carousel-indicators i{
+color:#607D8B;
+font-size:14px
+}
+.carousel-indicators [data-bs-target]{
+       
+     text-indent: 1px!important;
+  }
+  
+  .carousel-control-prev{
+          left: 86%!important;
+      
+  }
+
+
+  .card-title {
+color:#fff!important;
+   background-color: #2d4756;
+   padding: 10px;
+   border-radius: 5px;
+
+ }
+ 
+ .card-text{
+        color: #2d4756; 
+        font-weight:bold;
+ }
+ .card-link1{
+     color:#fff!important;
+   background-color: #bea880;
+   padding: 10px;
+   border-radius: 5px;
+   text-decoration:none;
+ }
+   .card-link2{
+     color:#bea880!important;
+   background-color: #fff;
+   padding: 10px;
+   border:1px solid #bea880;
+   border-radius: 5px;
+       text-decoration:none;
+ }

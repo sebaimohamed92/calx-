@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="calendar">
+        <div class="calendar-header">
+          <button class="btn btn-primary btn-sm float-left" (click)="prevMonth()">&#8249;</button>
+          <h2 class="text-center">{{ monthNames[currentMonth] }} {{ currentYear }}</h2>
+          <button class="btn btn-primary btn-sm float-right" (click)="nextMonth()">&#8250;</button>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th *ngFor="let day of dayNames">{{ day }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let week of weeks">
+              <td *ngFor="let day of week" [class.otherMonth]="day.otherMonth" [class.today]="day.today">{{ day.date }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

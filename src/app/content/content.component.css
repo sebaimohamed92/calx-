@@ -1,0 +1,119 @@
+ .table-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+
+
+  .menu-flottant {
+    width:14em; /* Largeur des items du menu*/
+    float: right; /* Je veux que le menu soit à droite*/
+    position:fixed; /* Le menu est fixe à l'écran*/
+    z-index:9999; /* Il sera au dessus de tous les éléments*/
+    top: 40%; /* Il sera à 40% du bord supérieur de l'écran*/
+    font-size: 1em; /* Taille de la police*/
+    line-height: 2px; /* Hauteur de ligne du menu*/
+    color: #fff; /* Couleur de la police*/
+    font-weight:700; /* Mettre le texte en gras*/
+    text-transform:uppercase; /* Mettre le texte en majuscule*/
+    right: -10em; /* Décalage du menu sur la droite pour masquer le texte et ne laisser que les icônes de visibles*/
+}
+.menu-flottant ul {
+    list-style: none; /* Le menu est une liste, mais je ne veux pas afficher les puces*/
+    margin: 0; /* Choix des marges internes et externes*/
+    padding: 0;
+}
+.menu-flottant ul li {
+    display:block; /* Définition des items en tant que bloc*/
+    background-color: #333; /* Couleur de fond*/
+    height: 3.5em; /* Hauteur des items du menu*/
+    padding: 1em 1.5em; /* Marges internes des items du menu*/
+    position: relative; /* On leur attribut une position relative*/
+    -webkit-transition: -webkit-transform 0.5s; /* Effet de déplacement au passage de la souris*/
+    -moz-transition: -webkit-transform 0.5s; /* On le définit plusieurs fois pour assurer la compatibilité entre les navigateurs*/
+	transition: transform .5s;
+}
+/*Couleurs de fond des items du menu*/
+.menu-flottant ul li:nth-child(1) { 
+	background-color: #2d4756; /* 1er item du menu*/
+  border-top-left-radius: 14px;
+} 
+.menu-flottant ul li:nth-child(2) { 
+	background-color: #2d4756
+  ; /* 2e item du menu*/
+} 
+.menu-flottant ul li:nth-child(3) { 
+	background-color: #2d4756; /* 3e item du menu*/
+} 
+
+.menu-flottant ul li:nth-child(4) { 
+	background-color: #2d4756; /* 3e item du menu*/
+  border-bottom-left-radius: 14px;
+} 
+/* Si vous en avez plus de 3, ajouteZ ici les mêmes lignes en remplaçant les chiffres et couleurs*/
+
+/* Création de la transformation CSS qui permet d'afficher le menu au passage de la souris*/
+.menu-flottant ul li:hover {
+    -webkit-transform: translateX(-10em);
+    transform: translateX(-10em);
+}
+
+/* Mise en forme des liens du menu*/
+.menu-flottant ul li a {
+    display:block; /* On les définit en tant que bloc*/
+    color: #FFF; /* Couleur du texte*/
+    text-decoration: none; /* On ne veut pas qu'ils soient soulignés par exemple*/
+    position: absolute; /* On leur attribut une position absolue*/
+    font-size:1em; /* Taille de la police*/
+    line-height: 1.5em; /* Hauteur de ligne*/
+    height:2em; /* Hauteur*/
+    top:0; /* Positionnement*/
+    bottom:0;
+    right: 0.2em;
+    margin:0 auto;
+    padding:1em 1.5em;
+}
+  
+/* Mise en forme des icônes du menu*/
+  .menu-flottant ul li span {
+    float: left;  /* On les cale à gauche */
+    line-height: 1.5em; /* Hauteur de ligne */
+    height:2em;
+    padding-bottom: 1em;
+  }  
+/*******************************************************/
+  h3 span {
+    font-weight: bolder;
+  }
+  
+  .row.contentDiv div div{
+  
+  background-color:#fff;
+  border-radius:10px;
+  min-height: 155px;
+  }
+
+.container content{ 
+  position: absolute;
+  left: 200px;
+  top: 500px;
+
+}

@@ -1,0 +1,40 @@
+.footerMenu{
+  background-color: #2d4756;
+  padding:5px;
+  border-radius: 5px;
+}
+.footerMenu div{
+padding: 10px;
+  border: 1px solid #5d8399;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+
+.footerMenu div i{
+color: #5d8399;
+}
+
+.footerMenu div:first-child{
+ border: 1px dotted orange;
+}
+.footerMenu div:first-child i{
+color: orange;
+
+}
+.bg-notif {
+  background-color:  #5d8399;
+}
+.footerMenu div.active{
+background-color:orange;
+}
+
+
+.footerMenu div.active i{
+color: #fff;
+}
+
+.footerMenu span {
+border-radius: 5px;
+  background-color: #5d8399;
+}
